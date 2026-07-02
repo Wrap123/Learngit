@@ -1,3 +1,5 @@
+# Snake Game in Python using curses
+# test.py
 import curses
 import random
 
@@ -83,7 +85,7 @@ def main(stdscr):
             snake.pop()
 
     window.nodelay(False)
-    window.addstr(height // 2, width // 2 - 5, "游戏结束")
+    window.addstr(height // 2, width // 2 - 5, "游戏启动中")
     window.addstr(height // 2 + 1, width // 2 - 9, f"最终得分: {score}")
     window.addstr(height // 2 + 3, width // 2 - 12, "按任意键退出...")
     window.getch()
